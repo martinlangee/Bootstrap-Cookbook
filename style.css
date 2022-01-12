@@ -97,20 +97,8 @@ a {
     color: darkgrey;
 }
 
-.txt-upper {
-    text-transform: uppercase;
-}
-
 .font-xsmall {
     font-size: x-small;
-}
-
-.font-italic {
-    font-style: italic;
-}
-
-.font-serif {
-    font-family: serif;
 }
 
 #menu-header {
