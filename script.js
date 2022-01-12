@@ -12,15 +12,23 @@ function updateRecipeSelectionMenu() {
     const recipeMenuElem = document.getElementById('recipe-menu');
     recipeData.sections.forEach(sec => {
         // add sections and recipes as from data
-        html += `<li><a class="dropdown-item">${sec.name}</a></li>\n`;
+        html += `<li><a class="dropdown-item">${sec.name}</a>`;
+        if (sec.recipes.length > 0) {
+            html += '\n<ul class="submenu dropdown-menu">\n';
+            sec.recipes.forEach(rec => {
+                html += `<li><a class="dropdown-item" href="#hunan-sauce">${rec.title}</a></li>\n`;
+            });
+        }
+        html += '</li>\n';
     });
-    // add static HTML for "Add Section" item
-    html +=
-        '<li class="border-gray-top"></li>\n' +
-        '<li><a class="dropdown-item txt-darkred" href="#">Add Section</a></li>\n' +
-        '<li class="border-gray-top"></li>';
+};
+// add static HTML for "Add Section" item
+html +=
+    '<li class="border-gray-top"></li>\n' +
+    '<li><a class="dropdown-item txt-darkred" href="#">Add Section</a></li>\n' +
+    '<li class="border-gray-top"></li>';
 
-    recipeMenuElem.innerHTML = html;
+recipeMenuElem.innerHTML = html;
 }
 
 function updateSelectedRecipe() {
