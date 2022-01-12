@@ -7,6 +7,17 @@ function updateRecipeCount() {
     recipeCountElem.innerHTML = `${calcTotalRecipeCount()} Recipes`;
 }
 
+function updateMenuEvents() {
+    let recipeMenuElems = document.getElementsByClassName('recipe-link-item');
+    console.log(recipeMenuElems);
+    for (let idx = 0; idx < recipeMenuElems.length; idx++) {
+        const elem = recipeMenuElems[idx];
+        elem.onclick = (obj) => {
+            updateSelectedRecipe(obj.currentTarget.id);
+        };
+    }
+}
+
 function updateRecipeSelectionMenu() {
     let html = '';
     const recipeMenuElem = document.getElementById('recipe-menu');
@@ -16,12 +27,11 @@ function updateRecipeSelectionMenu() {
                     <ul class="submenu dropdown-menu">\n`;
         if (sec.recipes.length > 0) {
             sec.recipes.forEach(rec => {
-                html += `<li><a class="dropdown-item" href="#hunan-sauce">${rec.title}</a></li>\n`;
+                html += `<li class="recipe-link-item" id="${rec.id}"><a class="dropdown-item" href="#">${rec.title}</a></li>\n`;
             });
         }
         // add static "Add Recipe" item
-        html += `
-                        <li class="border-gray-top"></li>
+        html += `       <li class="border-gray-top"></li>
                         <li><a class="dropdown-item txt-darkred" href="#">Add Recipe ...</a></li>
                         <li class="border-gray-top"></li>
                     </ul>
@@ -37,13 +47,15 @@ function updateRecipeSelectionMenu() {
     recipeMenuElem.innerHTML = html;
 }
 
-function updateSelectedRecipe() {
+function updateSelectedRecipe(recipeId) {
     let html = '';
     recipeData.sections.forEach(sec => {
         // add sections and recipes as from data
         sec.recipes.forEach(rec => {
+            if (recipeId != undefined && recipeId != rec.id) return;
+
             html += `
-                    <div class="recipe" id="${rec.id}">
+                    <div class="recipe" id="_${rec.id}">
                         <div class="title">
                             <h2>${rec.title}</h2>
                             <div class="line-horizontal"></div>
@@ -102,3 +114,4 @@ function updateSelectedRecipe() {
 updateRecipeCount();
 updateRecipeSelectionMenu();
 updateSelectedRecipe();
+updateMenuEvents();

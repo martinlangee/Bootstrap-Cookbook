@@ -85,7 +85,7 @@ const recipeData = {
                 date: '1911-04-01',
                 time: '10 min',
                 imagePath: 'Dish-3.png',
-                comment: 'You think this is easy - you\'re wrong!',
+                comment: 'You think this is easy - you\'re right!',
                 ingredients: [{
                         ingredient: 'Basmati Rice',
                         amount: '200 g'
