@@ -60,11 +60,6 @@ a {
     font-size: larger;
 }
 
-.recipe-list {
-    flex-direction: row;
-    padding-left: 20px;
-}
-
 .author-link {
     margin-bottom: 0px;
     font-weight: bold;
@@ -131,6 +126,11 @@ a {
 
 #body-container {
     display: flex;
+}
+
+#recipe-list {
+    flex-direction: row;
+    padding-left: 20px;
 }
 
 @media all and (max-width: 800px) {
