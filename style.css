@@ -109,3 +109,26 @@ a {
 #body-container {
     display: flex;
 }
+
+@media all and (max-width: 800px) {
+    body {
+        padding: 0px 10px 0px 10px;
+    }
+    aside {
+        border-right: none;
+        height: 50px;
+        margin-top: -50px;
+    }
+    #menu-header {
+        visibility: collapse;
+    }
+    #body-container {
+        display: inline-block;
+    }
+    .dish-image {
+        width: 300px;
+    }
+    .nav-link {
+        margin-left: 15px;
+    }
+}
