@@ -77,64 +77,64 @@ const recipeData = {
         },
         {
             name: 'Rice',
-            recipes: [] //{
-                //     id: 'xxx',
-                //     title: '',
-                //     short: '',
-                //     author: '',
-                //     date: '',
-                //     time: '',
-                //     imagePath: '',
-                //     comment: '',
-                //     ingredients: [{
-                //             ingredient: '',
-                //             amount: ''
-                //         },
-                //         {
-                //             ingredient: '',
-                //             amount: ''
-                //         },
-                //         {
-                //             ingredient: '',
-                //             amount: ''
-                //         }
-                //     ],
-                //     steps: [
-                //         ''
-                //     ],
-                // }, ]
+            recipes: [{
+                id: 'cooked-rice',
+                title: 'Cooked Rice',
+                short: '',
+                author: '',
+                date: '',
+                time: '',
+                imagePath: '',
+                comment: '',
+                ingredients: [{
+                        ingredient: '',
+                        amount: ''
+                    },
+                    {
+                        ingredient: '',
+                        amount: ''
+                    },
+                    {
+                        ingredient: '',
+                        amount: ''
+                    }
+                ],
+                steps: [
+                    ''
+                ],
+            }, ]
         },
         {
             name: 'Main Dish',
-            recipes: [] //{
-                //     id: 't-bone-steak',
-                //     title: 'T-Bone Steak',
-                //     short: 'How to fry the steak right',
-                //     author: 'John Doe',
-                //     date: '1965-05-11',
-                //     time: '4 min',
-                //     comment: '',
-                //     imagePath: '',
-                //     ingredients: [{
-                //             ingredient: 'T-Bone steak',
-                //             amount: '1 pc of 400 g'
-                //         },
-                //         {
-                //             ingredient: 'Oil',
-                //             amount: '3 Spoons'
-                //         },
-                //         {
-                //             ingredient: 'Salt',
-                //             amount: 'Pinch'
-                //         }
-                //     ],
-                //     steps: [
-                //         'Amet non incididunt eiusmod dolor ea commodo id ut duis esse voluptate ex.',
-                //         'In veniam nisi exercitation aute incididunt excepteur tempor nisi ea est in eiusmod irure ea.',
-                //         'Culpa consequat elit officia commodo sunt ex cupidatat cupidatat ex.',
-                //         'Ea quis deserunt enim ut labore id occaecat labore.'
-                //     ],
-                // }, ]
+            recipes: [{
+                id: 't-bone-steak',
+                title: 'T-Bone Steak',
+                short: 'How to fry the steak right',
+                author: 'John Doe',
+                date: '1965-05-11',
+                time: '4 min',
+                comment: '',
+                imagePath: '',
+                ingredients: [{
+                        ingredient: 'T-Bone steak',
+                        amount: '1 pc of 400 g'
+                    },
+                    {
+                        ingredient: 'Oil',
+                        amount: '3 Spoons'
+                    },
+                    {
+                        ingredient: 'Salt',
+                        amount: 'Pinch'
+                    }
+                ],
+                steps: [
+                    'Amet non incididunt eiusmod dolor ea commodo id ut duis esse voluptate ex.',
+                    'In veniam nisi exercitation aute incididunt excepteur tempor nisi ea est in eiusmod irure ea.',
+                    'Culpa consequat elit officia commodo sunt ex cupidatat cupidatat ex.',
+                    'Ea quis deserunt enim ut labore id occaecat labore.'
+                ],
+            }, ]
         },
     ]
 };

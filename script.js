@@ -12,23 +12,29 @@ function updateRecipeSelectionMenu() {
     const recipeMenuElem = document.getElementById('recipe-menu');
     recipeData.sections.forEach(sec => {
         // add sections and recipes as from data
-        html += `<li><a class="dropdown-item">${sec.name}</a>`;
+        html += `<li><a class="dropdown-item">${sec.name}</a>
+                    <ul class="submenu dropdown-menu">\n`;
         if (sec.recipes.length > 0) {
-            html += '\n<ul class="submenu dropdown-menu">\n';
             sec.recipes.forEach(rec => {
                 html += `<li><a class="dropdown-item" href="#hunan-sauce">${rec.title}</a></li>\n`;
             });
         }
-        html += '</li>\n';
+        // add static HTML for "Add Recipe" item
+        html += `
+                        <li class="border-gray-top"></li>
+                        <li><a class="dropdown-item txt-darkred" href="#">Add Recipe ...</a></li>
+                        <li class="border-gray-top"></li>
+                    </ul>
+                </li>\n`;
     });
-};
-// add static HTML for "Add Section" item
-html +=
-    '<li class="border-gray-top"></li>\n' +
-    '<li><a class="dropdown-item txt-darkred" href="#">Add Section</a></li>\n' +
-    '<li class="border-gray-top"></li>';
 
-recipeMenuElem.innerHTML = html;
+    // add static HTML for "Add Section" item
+    html +=
+        '<li class="border-gray-top"></li>\n' +
+        '<li><a class="dropdown-item txt-darkred" href="#">Add Section ...</a></li>\n' +
+        '<li class="border-gray-top"></li>';
+
+    recipeMenuElem.innerHTML = html;
 }
 
 function updateSelectedRecipe() {
