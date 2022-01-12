@@ -1,3 +1,7 @@
+/* * {
+    border: tomato 1px dashed;
+} */
+
 body {
     padding: 0px 150px 0px 150px;
     background-color: lightgrey;
@@ -57,11 +61,6 @@ a {
 .dish-image {
     width: 500px;
     padding-bottom: 30px;
-}
-
-.col-6,
-.col-2 {
-    border-top: 1px solid lightgray;
 }
 
 .author-link {
