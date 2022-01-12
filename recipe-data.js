@@ -80,27 +80,29 @@ const recipeData = {
             recipes: [{
                 id: 'cooked-rice',
                 title: 'Cooked Rice',
-                short: '',
-                author: '',
-                date: '',
-                time: '',
-                imagePath: '',
-                comment: '',
+                short: 'The basic of the basics',
+                author: 'Paula Froggy',
+                date: '1911-04-01',
+                time: '10 min',
+                imagePath: 'Dish-3.png',
+                comment: 'You think this is easy - you\'re wrong!',
                 ingredients: [{
-                        ingredient: '',
-                        amount: ''
+                        ingredient: 'Basmati Rice',
+                        amount: '200 g'
                     },
                     {
-                        ingredient: '',
-                        amount: ''
+                        ingredient: 'Water',
+                        amount: '200 ml'
                     },
                     {
-                        ingredient: '',
-                        amount: ''
+                        ingredient: 'Salt',
+                        amount: 'Pinch'
                     }
                 ],
                 steps: [
-                    ''
+                    'Duis esse nulla est dolore dolor officia reprehenderit.',
+                    'Ad occaecat occaecat aliquip veniam adipisicing cillum tempor adipisicing occaecat duis duis veniam sunt cupidatat.',
+                    'In dolor excepteur id aliquip do officia sunt nostrud proident reprehenderit labore mollit occaecat proident.'
                 ],
             }, ]
         },
@@ -113,8 +115,8 @@ const recipeData = {
                 author: 'John Doe',
                 date: '1965-05-11',
                 time: '4 min',
-                comment: '',
-                imagePath: '',
+                comment: 'You\'ll never gonna eat another steak again',
+                imagePath: 'Dish-4.png',
                 ingredients: [{
                         ingredient: 'T-Bone steak',
                         amount: '1 pc of 400 g'

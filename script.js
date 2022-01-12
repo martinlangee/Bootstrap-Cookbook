@@ -19,7 +19,7 @@ function updateRecipeSelectionMenu() {
                 html += `<li><a class="dropdown-item" href="#hunan-sauce">${rec.title}</a></li>\n`;
             });
         }
-        // add static HTML for "Add Recipe" item
+        // add static "Add Recipe" item
         html += `
                         <li class="border-gray-top"></li>
                         <li><a class="dropdown-item txt-darkred" href="#">Add Recipe ...</a></li>
@@ -28,7 +28,7 @@ function updateRecipeSelectionMenu() {
                 </li>\n`;
     });
 
-    // add static HTML for "Add Section" item
+    // add static "Add Section" item
     html +=
         '<li class="border-gray-top"></li>\n' +
         '<li><a class="dropdown-item txt-darkred" href="#">Add Section ...</a></li>\n' +
