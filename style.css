@@ -18,8 +18,7 @@ h1 {
 h2 {
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 30px;
-    margin-left: -20px;
+    margin-left: 10px;
     margin-top: 50px !important;
     margin-bottom: 10px !important;
     border-bottom: lightgrey 1px solid;
@@ -51,6 +50,14 @@ img {
 
 a {
     color: black !important;
+}
+
+.description {
+    padding-bottom: 20px;
+    padding-left: 10px;
+    font-family: serif;
+    font-style: italic;
+    font-size: larger;
 }
 
 .recipe-list {
