@@ -44,6 +44,10 @@ img {
     padding-left: 10px;
 }
 
+a {
+    color: black !important;
+}
+
 .recipe-list {
     flex-direction: row;
     padding-left: 20px;
@@ -59,6 +63,17 @@ img {
     border-top: 1px solid lightgray;
 }
 
+.author-link {
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+.total-time-header {
+    margin-bottom: 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
 .border-gray-top {
     border-top: lightgray 1px solid;
 }
@@ -69,6 +84,10 @@ img {
 
 .txt-darkred {
     color: darkred !important;
+}
+
+.txt-gray {
+    color: darkgrey;
 }
 
 #menu-header {
