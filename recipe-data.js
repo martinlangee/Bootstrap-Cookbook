@@ -12,6 +12,7 @@ const recipeData = {
                     time: '15 min',
                     short: 'A blend of sweet and sour with hot and spicy',
                     image: 'Dish-1.png',
+                    comment: 'Sauce for one stir-fry recipe',
                     ingredients: [{
                             ingredient: 'Cream',
                             amount: '200 ml'
@@ -34,11 +35,12 @@ const recipeData = {
                 },
                 {
                     title: '',
+                    short: '',
                     author: '',
                     date: '',
                     time: '',
-                    short: '',
                     image: '',
+                    comment: '',
                     ingredients: [{
                             ingredient: '',
                             amount: ''
@@ -66,10 +68,11 @@ const recipeData = {
             name: 'Main Dish',
             recipes: [{
                 title: 'T-Bone Steak',
+                short: 'How to fry the steak right',
                 author: 'John Doe',
                 date: '1965-05-11',
                 time: '4 min',
-                short: 'How to fry the steak right',
+                comment: '',
                 image: '',
                 ingredients: [{
                         ingredient: 'T-Bone steak',
