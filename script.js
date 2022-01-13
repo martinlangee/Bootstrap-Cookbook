@@ -28,11 +28,11 @@ function updateRecipeSelectionMenu() {
     const recipeMenuElem = document.getElementById('recipe-menu');
     recipeData.sections.forEach(sec => {
         // add sections and recipes as from data
-        html += `<li><a class="dropdown-item">${sec.name}</a>
+        html += `<li class="dropdown-item">${sec.name}
                     <ul class="submenu dropdown-menu">\n`;
         if (sec.recipes.length > 0) {
             sec.recipes.forEach(rec => {
-                html += `<li class="recipe-link-item dropdown-item" id="${rec.id}">${rec.title}</a></li>\n`;
+                html += `<li class="recipe-link-item dropdown-item" id="${rec.id}">${rec.title}</li>\n`;
             });
         }
         // add static "Add Recipe" item
