@@ -67,9 +67,14 @@ function updateSelectedRecipe(recipeId) {
                         <div class="description">
                             ${rec.short}
                         </div>
-                        <div class="image-container">
-                            <img class="recipe-image" src="./images/${rec.imagePath}">
-                            <div class="hide image-hint">${rec.title}</div>
+
+                        <div class="item image-container">
+                            <div class="recipe-image" style="background-image:url(./images/${rec.imagePath})">
+                                <div class="cover d-flex justify-content-center flex-column">
+                                    <h5 class="font-serif text-uppercase">${rec.title}</h5>
+                                    <p class="font-serif" style="font-style: italic;">${rec.short}</p>
+                                </div>
+                            </div>
                         </div>
                         <div class="container">
                             <div class="row">

@@ -80,7 +80,7 @@ a {
 }
 
 .image-container {
-    position: relative;
+    margin: 0 0 10px 10px;
 }
 
 .image-hint {
@@ -95,16 +95,28 @@ a {
 
 .recipe-image {
     width: 500px;
+    height: 300px;
     padding-bottom: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.hide {
-    opacity: 0;
+.recipe-image .cover {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 300px;
+    background-color: rgba(46, 65, 83, 0.75);
     transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15)
 }
 
-.recipe-image:hover+.hide {
-    opacity: 1;
+.recipe-image:hover .cover {
+    opacity: 1
 }
 
 .recipe-row p {
@@ -169,6 +181,11 @@ a {
     }
     .recipe-image {
         width: 300px;
+        height: 180px;
+    }
+    .recipe-image .cover {
+        width: 300px;
+        height: 180px;
     }
     .nav-link {
         margin-left: 15px;
