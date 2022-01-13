@@ -12,10 +12,15 @@ The pages is responsive: the menu automatically jumps to the top of the recipes 
 
 All dynamic creation of HTML code is implemented in the 'script.js' file. See function comments there for details.
 
-## Known Issues
+## Open Issues
 <ol>
-<li>The display of all recipes on start up is not a feature but a bug. A solution has to be found for what is expected after first loading.</li>
+    <li>Introduce "Share" button(s)</li>
+    <li>Nice to have: comment funtionality</li>
+</ol>
 
-<li>The selection menu is not closing after click on it.</li>
-
-<li>The second level of the selection menu is not displayed in case the browser window is less then around 950 px wide. This is an issue of the multilevel menu component which automatically switches to the "smart phone mode". Further investigation necessary.</></li>
+## Known Bugs
+<ol>
+    <li>The display of all recipes on start up is not a feature but a bug. A solution has to be found for what is expected after first loading.</li>
+    <li>The selection menu is not closing after click on it.</li>
+    <li>The second level of the selection menu is not displayed in case the browser window is less then around 950 px wide. This is an issue of the multilevel menu component which automatically switches to the "smart phone mode". Further investigation necessary.</></li>
+</ol>
