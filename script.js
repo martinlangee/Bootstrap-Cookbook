@@ -58,6 +58,7 @@ function updateSelectedRecipe(recipeId) {
         sec.recipes.forEach(rec => {
             if (recipeId != undefined && recipeId != rec.id) return;
 
+            // top section with title, image, comment etc.
             html += `<div class="recipe" id="_${rec.id}">
                      <div class="title">
                             <h2>${rec.title}</h2>
@@ -84,6 +85,8 @@ function updateSelectedRecipe(recipeId) {
                         </div>
                         <h4>Ingredients</h4>
                         <div class="container">`;
+
+            // add list of ingredients
             rec.ingredients.forEach(ing => {
                 html += `<div class="row">
                                 <div class="col-6 border-gray-top">
@@ -98,6 +101,8 @@ function updateSelectedRecipe(recipeId) {
                         <h4>Steps</h4>
                         <div class="container">
                             <div class="row recipe-row">`;
+
+            // add list of steps
             rec.steps.forEach(step => {
                 html += `
                                 <p>${step}</p>`
@@ -107,6 +112,8 @@ function updateSelectedRecipe(recipeId) {
                         <h4>User Comments</h4>
                         <div class="container">
                             <div class="row">`;
+
+            // add list of comments
             if (rec.comments.length == 0) {
                 html += `<div class="col-12 font-smaller">
                                     No user comments yet.
