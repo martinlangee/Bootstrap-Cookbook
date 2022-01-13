@@ -8,7 +8,7 @@ The site shows a recipe that you select from the menu on the upper left side. Th
 
 Currently on first load, all recipes are displayed top-down on the content area of the page. If you select one recipe via menu the selected one is shown exclusively.
 
-The pages is responsive: the menu automatically jumps to the top of the recipes when the window size is decreased. There is an issue with the menu in case of small screens: see <em>Knwon Issues</em>.
+The pages is responsive: the menu automatically jumps to the top of the recipes when the window size is decreased. There is an issue with the menu in case of small screens: see <em>Known Bugs</em>.
 
 All dynamic creation of HTML code is implemented in the 'script.js' file. See function comments there for details.
 
