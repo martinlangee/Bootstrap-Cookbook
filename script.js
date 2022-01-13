@@ -129,7 +129,9 @@ function updateSelectedRecipe(recipeId) {
                 });
             }
             html += `</div>
-                        </div>`;
+                        </div>
+                        <button type="button" class="btn btn-outline-secondary btn-sm btn-comment" onclick="alert('Not yet implemented!')">Add comment ...</button>
+                    </div>`;
         });
     });
     const recipeListElem = document.getElementById('recipe-list');

@@ -126,6 +126,10 @@ a {
     font-size: smaller;
 }
 
+.btn-comment {
+    margin: 20px 0px 0px 10px;
+}
+
 #menu-header {
     padding: 5px;
 }
