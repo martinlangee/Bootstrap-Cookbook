@@ -2,7 +2,8 @@
 WBS Training Project
 
 ## Explanation
-The design is implemented using manly grid styles from the Bootstrap library.
+I'm first of all not a web designer but a developer so I tried to implement the given design template (see [sample screen](./SampleScreen.png)) as close as possible.
+The implementation uses manly grid styles from the Bootstrap library.
 
 The site shows a recipe that you select from the menu on the upper left side. The menu is adapted from a component taken from here: https://bootstrap-menu.com/detail-multilevel.html. The menu content is created dynamically by reading and interpreting the recipe data stored in the file 'recipe-data.js'.
 
