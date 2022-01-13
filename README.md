@@ -12,10 +12,7 @@ The pages is responsive: the menu automatically jumps to the top of the recipes 
 
 All dynamic creation of HTML code is implemented in the 'script.js' file. See function comments there for details.
 
-The anchor elements where the dynamic HTML is inserted are:
-'&lt;ul id="recipe-menu" ... >' for the recipe menu and
-'&lt;div id="recipe-list"> for the recipe description.
-The elements are identified by the ids respectively.
+The anchor elements where the dynamic HTML is inserted are:<br>'&lt;ul id="recipe-menu" ... >' for the recipe menu and<br>'&lt;div id="recipe-list"> for the recipe description.<br>The elements are identified by the ids respectively.
 
 ## Open Issues
 <ol>
