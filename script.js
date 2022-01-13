@@ -27,22 +27,21 @@ function updateRecipeSelectionMenu() {
                     <ul class="submenu dropdown-menu">\n`;
         if (sec.recipes.length > 0) {
             sec.recipes.forEach(rec => {
-                html += `<li class="recipe-link-item" id="${rec.id}"><a class="dropdown-item" href="#">${rec.title}</a></li>\n`;
+                html += `<li class="recipe-link-item dropdown-item" id="${rec.id}">${rec.title}</a></li>\n`;
             });
         }
         // add static "Add Recipe" item
         html += `       <li class="border-gray-top"></li>
-                        <li><a class="dropdown-item txt-darkred" href="#">Add Recipe ...</a></li>
+                        <li class="dropdown-item txt-darkred" onclick="alert('Sorry, >> Add Recipe << is not yet implemented.');">Add Recipe ...</li>
                         <li class="border-gray-top"></li>
                     </ul>
                 </li>\n`;
     });
 
     // add static "Add Section" item
-    html +=
-        '<li class="border-gray-top"></li>\n' +
-        '<li><a class="dropdown-item txt-darkred" href="#">Add Section ...</a></li>\n' +
-        '<li class="border-gray-top"></li>';
+    html += `<li class="border-gray-top"></li>
+             <li class="dropdown-item txt-darkred" onclick="alert('Sorry, >> Add Section << is not yet implemented.');">Add Section ...</li>
+             <li class="border-gray-top"></li>`;
 
     recipeMenuElem.innerHTML = html;
 }
@@ -54,8 +53,7 @@ function updateSelectedRecipe(recipeId) {
         sec.recipes.forEach(rec => {
             if (recipeId != undefined && recipeId != rec.id) return;
 
-            html += `
-                    <div class="recipe" id="_${rec.id}">
+            html += `<div class="recipe" id="_${rec.id}">
                         <div class="title">
                             <h2>${rec.title}</h2>
                             <div class="line-horizontal"></div>
@@ -82,8 +80,7 @@ function updateSelectedRecipe(recipeId) {
                         <h4>Ingredients</h4>
                         <div class="container">`;
             rec.ingredients.forEach(ing => {
-                html += `
-                            <div class="row">
+                html += `<div class="row">
                                 <div class="col-6 border-gray-top">
                                     <p>${ing.ingredient}</p>
                                 </div> 
@@ -92,8 +89,7 @@ function updateSelectedRecipe(recipeId) {
                                 </div>
                             </div>`;
             });
-            html += `
-                        </div>
+            html += `</div>
                         <h4>Steps</h4>
                         <div class="container">
                             <div class="row recipe-row">`;
@@ -101,8 +97,7 @@ function updateSelectedRecipe(recipeId) {
                 html += `
                                 <p>${step}</p>`
             });
-            html += `
-                            </div>
+            html += `       </div>
                         </div>
                     </div>`;
         });
