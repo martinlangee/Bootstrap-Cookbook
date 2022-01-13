@@ -1,12 +1,16 @@
+/// The total number of recipes over all sections is returned
 function calcTotalRecipeCount() {
     return recipeData.sections.reduce((aggregated, current) => aggregated + current.recipes.length, 0);
 }
 
+/// The total number of recipes on the left upper corner of the page is updated
 function updateRecipeCount() {
     const recipeCountElem = document.getElementById('recipe-count');
     recipeCountElem.innerHTML = `${calcTotalRecipeCount()} Recipes`;
 }
 
+/// The onclick events of the recipe selection menu items are bound to a function that updates the selected recipe.
+/// The passed recipe-id is taken from the according <li> element.
 function updateMenuEvents() {
     let recipeMenuElems = document.getElementsByClassName('recipe-link-item');
     console.log(recipeMenuElems);
@@ -18,6 +22,7 @@ function updateMenuEvents() {
     }
 }
 
+/// The Bootstrap menu to select the current recipe to be shown is created from the recipe-data structure
 function updateRecipeSelectionMenu() {
     let html = '';
     const recipeMenuElem = document.getElementById('recipe-menu');
@@ -32,20 +37,20 @@ function updateRecipeSelectionMenu() {
         }
         // add static "Add Recipe" item
         html += `       <li class="border-gray-top"></li>
-                        <li class="dropdown-item txt-darkred" onclick="alert('Sorry, >> Add Recipe << is not yet implemented.');">Add Recipe ...</li>
-                        <li class="border-gray-top"></li>
+                        <li class="dropdown-item txt-darkred" onclick="alert('Sorry, >>Add Recipe<< is not yet implemented.');">Add Recipe ...</li>
                     </ul>
                 </li>\n`;
     });
 
     // add static "Add Section" item
     html += `<li class="border-gray-top"></li>
-             <li class="dropdown-item txt-darkred" onclick="alert('Sorry, >> Add Section << is not yet implemented.');">Add Section ...</li>
-             <li class="border-gray-top"></li>`;
+             <li class="dropdown-item txt-darkred" onclick="alert('Sorry, >>Add Section<< is not yet implemented.');">Add Section ...</li>`;
 
     recipeMenuElem.innerHTML = html;
 }
 
+/// The view of the recipe is updated depending on the recipeId that is passed.
+/// If no recipeId is passed (= undefined) a view of all recipes is created.
 function updateSelectedRecipe(recipeId) {
     let html = '';
     recipeData.sections.forEach(sec => {
@@ -105,6 +110,8 @@ function updateSelectedRecipe(recipeId) {
     const recipeListElem = document.getElementById('recipe-list');
     recipeListElem.innerHTML = html;
 }
+
+// create the dynamic parts of HTML
 
 updateRecipeCount();
 updateRecipeSelectionMenu();
