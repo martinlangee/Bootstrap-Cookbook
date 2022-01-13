@@ -3,7 +3,7 @@
 } */
 
 body {
-    padding: 0px 150px 0px 150px;
+    padding: 0px 150px 50px 150px;
     background-color: lightgrey;
 }
 
@@ -120,6 +120,10 @@ a {
 
 .font-xsmall {
     font-size: x-small;
+}
+
+.font-smaller {
+    font-size: smaller;
 }
 
 #menu-header {

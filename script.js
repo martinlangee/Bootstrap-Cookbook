@@ -59,7 +59,7 @@ function updateSelectedRecipe(recipeId) {
             if (recipeId != undefined && recipeId != rec.id) return;
 
             html += `<div class="recipe" id="_${rec.id}">
-                        <div class="title">
+                     <div class="title">
                             <h2>${rec.title}</h2>
                             <div class="line-horizontal"></div>
                         </div>
@@ -102,9 +102,27 @@ function updateSelectedRecipe(recipeId) {
                 html += `
                                 <p>${step}</p>`
             });
-            html += `       </div>
+            html += `</div>
                         </div>
-                    </div>`;
+                        <h4>User Comments</h4>
+                        <div class="container">
+                            <div class="row">`;
+            if (rec.comments.length == 0) {
+                html += `<div class="col-12 font-smaller">
+                                    No user comments yet.
+                                 </div>`;
+            } else {
+                rec.comments.forEach(com => {
+                    html += `<div class="col-2 font-smaller border-gray-top">
+                                    ${com.date}<br>${com.author}
+                                </div>
+                                <div class="col-10 font-smaller border-gray-top">
+                                    ${com.text}
+                                </div>`;
+                });
+            }
+            html += `</div>
+                        </div>`;
         });
     });
     const recipeListElem = document.getElementById('recipe-list');
@@ -112,7 +130,6 @@ function updateSelectedRecipe(recipeId) {
 }
 
 // create the dynamic parts of HTML
-
 updateRecipeCount();
 updateRecipeSelectionMenu();
 updateSelectedRecipe();

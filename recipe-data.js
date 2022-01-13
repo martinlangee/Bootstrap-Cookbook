@@ -33,6 +33,22 @@ const recipeData = {
                         'Non anim sunt amet nisi exercitation occaecat officia.',
                         'Cillum dolore ea commodo eiusmod laborum mollit commodo reprehenderit in.'
                     ],
+                    comments: [{
+                            date: '2020-23-09',
+                            author: 'Peter Parker',
+                            text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id placeat optio natus.'
+                        },
+                        {
+                            date: '2020-22-10',
+                            author: 'Claudia Cardinale',
+                            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quis temporibus eos voluptatum eum.'
+                        },
+                        {
+                            date: '2021-21-01',
+                            author: 'Mary Jones',
+                            text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id placeat optio natus.'
+                        },
+                    ]
                 },
                 {
                     id: 'austrian-guglhupf',
@@ -72,6 +88,17 @@ const recipeData = {
                         'Elit qui proident sint eu aliquip enim in ipsum veniam consectetur id anim aliquip reprehenderit.',
                         'Incididunt proident laborum et esse esse ipsum laboris veniam.'
                     ],
+                    comments: [{
+                            date: '2020-23-09',
+                            author: 'Peter Parker',
+                            text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id placeat optio natus.'
+                        },
+                        {
+                            date: '2021-21-01',
+                            author: 'Mary Jones',
+                            text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus doloribus quam cupiditate. Autem nisi natus eveniet delectus, maxime dolore eos tempora hic praesentium aliquam totam ipsa suscipit quod asperiores quia.'
+                        },
+                    ]
                 },
             ]
         },
@@ -104,6 +131,7 @@ const recipeData = {
                     'Ad occaecat occaecat aliquip veniam adipisicing cillum tempor adipisicing occaecat duis duis veniam sunt cupidatat.',
                     'In dolor excepteur id aliquip do officia sunt nostrud proident reprehenderit labore mollit occaecat proident.'
                 ],
+                comments: []
             }, ]
         },
         {
@@ -136,6 +164,7 @@ const recipeData = {
                     'Culpa consequat elit officia commodo sunt ex cupidatat cupidatat ex.',
                     'Ea quis deserunt enim ut labore id occaecat labore.'
                 ],
+                comments: []
             }, ]
         },
     ]
