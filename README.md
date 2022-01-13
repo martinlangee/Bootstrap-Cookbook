@@ -8,7 +8,7 @@ The site shows a recipe that you select from the menu on the upper left side. Th
 
 Currently on first load, all recipes are displayed top-down on the content area of the page. If you select one recipe via menu the selected one is shown exclusively.
 
-The pages is responsive: the menu automatically jumps to the top of the recipes when the window size is decreased. There is an issue with the menu in case of small screens: see <em>Known Bugs</em>.
+The pages is responsive: the menu automatically jumps to the top of the recipes when the window size is decreased. There is an issue with the menu in case of small screens: see [Known Bugs](#KnownBugs).
 
 All dynamic creation of HTML code is implemented in the 'script.js' file. See function comments there for details.
 
@@ -20,7 +20,7 @@ The anchor elements where the dynamic HTML is inserted are:<br>'&lt;ul id="recip
     <li>Nice to have: comment funtionality</li>
 </ol>
 
-## Known Bugs
+## Known Bugs <a id="KnownBugs"></a>
 <ol>
     <li>The display of all recipes on start up is not a feature but a bug. A solution has to be found for what is expected after first loading.</li>
     <li>The selection menu is not closing after click on it.</li>
