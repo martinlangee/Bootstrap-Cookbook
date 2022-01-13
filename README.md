@@ -10,6 +10,8 @@ Currently on first load, all recipes are displayed top-down on the content area 
 
 The pages is responsive: the menu automatically jumps to the top of the recipes when the window size is decreased. There is an issue with the menu in case of small screens: see [Known Bugs](#KnownBugs).
 
+On mouse hover over the large image the recipe titel is shown.
+
 All dynamic creation of HTML code is implemented in the 'script.js' file. See function comments there for details.
 
 The anchor elements where the dynamic HTML is inserted are:<br>'&lt;ul id="recipe-menu" ... >' for the recipe menu and<br>'&lt;div id="recipe-list"> for the recipe description.<br>The elements are identified by the ids respectively.
