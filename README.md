@@ -16,12 +16,9 @@ All dynamic creation of HTML code is implemented in the 'script.js' file. See fu
 
 The anchor elements where the dynamic HTML is inserted are:<br>'&lt;ul id="recipe-menu" ... >' for the recipe menu and<br>'&lt;div id="recipe-list"> for the recipe description.<br>The elements are identified by the ids respectively.
 
-Additionally to the original requirements I added a comment section and a fake button for adding comments.
+Additionally to the original requirements I added a comment section and a fake button for adding comments. The social media buttons are also added without function.
 
 ## Open Issues
-<ol>
-    <li>Introduce "Share" button(s)</li>
-</ol>
 
 ## Known Bugs <a id="KnownBugs"></a>
 <ol>
