@@ -119,6 +119,10 @@ a {
     color: darkgrey;
 }
 
+.font-serif {
+    font-family: serif;
+}
+
 .font-xsmall {
     font-size: x-small;
 }
