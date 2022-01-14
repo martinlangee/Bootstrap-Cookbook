@@ -69,7 +69,7 @@ function updateSelectedRecipe(recipeId) {
                         </div>
 
                         <div class="item image-container">
-                            <div class="recipe-image" style="background-image:url(./images/${rec.imagePath})">
+                            <div class="recipe-image" style="background-image:url(./${rec.imagePath})">
                                 <div class="cover d-flex justify-content-center flex-column">
                                     <h5 class="font-serif text-uppercase">${rec.title}</h5>
                                     <p class="font-serif" style="font-style: italic;">${rec.short}</p>
@@ -136,12 +136,12 @@ function updateSelectedRecipe(recipeId) {
             html += `</div>
                         </div>
                         <div class="social-btn-container">
-                            <img src="./images/add-comment.png" class="cursor-pointer" onclick="alert('Not yet implemented!')" alt="Leave a comment">
-                            <img src="./images/social-email.png" class="cursor-pointer" alt="Send an e-mail">
-                            <img src="./images/social-insta.png" class="cursor-pointer" alt="Instagram">
-                            <img src="./images/social-facebook.png" class="cursor-pointer" alt="Facebook">
-                            <img src="./images/social-twitter.png" class="cursor-pointer" alt="Twitter">
-                            <img src="./images/social-linkedin.png" class="cursor-pointer" alt="LinkedIn">
+                            <img src="./add-comment.png" class="cursor-pointer" onclick="alert('Not yet implemented!')" alt="Leave a comment">
+                            <img src="./social-email.png" class="cursor-pointer" alt="Send an e-mail">
+                            <img src="./social-insta.png" class="cursor-pointer" alt="Instagram">
+                            <img src="./social-facebook.png" class="cursor-pointer" alt="Facebook">
+                            <img src="./social-twitter.png" class="cursor-pointer" alt="Twitter">
+                            <img src="./social-linkedin.png" class="cursor-pointer" alt="LinkedIn">
                         </div>
                         </div>`;
         });
