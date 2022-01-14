@@ -12,7 +12,7 @@ const recipeData = {
                     date: '2020-11-16',
                     time: '5 min',
                     short: 'A blend of sweet and sour with hot and spicy',
-                    imagePath: 'Dish-1.png',
+                    imagePath: 'Dish-1.PNG',
                     comment: 'Sauce for one stir-fry recipe',
                     ingredients: [{
                             ingredient: 'Cream',
@@ -57,7 +57,7 @@ const recipeData = {
                     author: 'John Connor',
                     date: '1997-08-29',
                     time: '1 hour',
-                    imagePath: 'Dish-2.png',
+                    imagePath: 'Dish-2.PNG',
                     comment: 'Something you cannot resist',
                     ingredients: [{
                             ingredient: 'Unsalted Butter (room temperature)',
@@ -111,7 +111,7 @@ const recipeData = {
                 author: 'Paula Froggy',
                 date: '1911-04-01',
                 time: '10 min',
-                imagePath: 'Dish-3.png',
+                imagePath: 'Dish-3.PNG',
                 comment: 'You think this is easy - you\'re right!',
                 ingredients: [{
                         ingredient: 'Basmati Rice',
@@ -144,7 +144,7 @@ const recipeData = {
                 date: '1965-05-11',
                 time: '4 min',
                 comment: 'You\'ll never gonna eat another steak again',
-                imagePath: 'Dish-4.png',
+                imagePath: 'Dish-4.PNG',
                 ingredients: [{
                         ingredient: 'T-Bone steak',
                         amount: '1 pc of 400 g'
